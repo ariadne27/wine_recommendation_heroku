@@ -84,6 +84,10 @@ def sample_metadata(ID):
     print(sample_metadata)
     return jsonify(sample_metadata)
 
+@app.route("/word_cloud")
+def word_cloud():
+    return render_template("word_cloud.html")
+
 
 # @app.route("/samples/<sample>")
 # def samples(sample):
